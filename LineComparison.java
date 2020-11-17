@@ -17,8 +17,9 @@ public class LineComparison {
 		
 		System.out.println("Enter the y-coordinate of 2nd point");
 		int y2=sc.nextInt();
-	
-		double length= Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+	    int x=(x2-x1)*(x2-x1);
+	    int y=(y2-y1)*(y2-y1);
+		double length= Math.sqrt(x+y);
 		
 		System.out.println("Length of the line is:"+length);
 	}
