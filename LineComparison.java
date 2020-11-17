@@ -14,20 +14,22 @@ public class LineComparison {
 		return length;
 	}
 	
-	void equal()
-	{
-		System.out.println("Enter Coordinates of the First Line");
+	void compare()
+	{	System.out.println("Enter the coordinates of first line");
 		String p=String.valueOf(LineLength());
-		System.out.println("Enter Coordinates of the second Line");
+		System.out.println("Enter the coordinates of second line");
 		String q=String.valueOf(LineLength());
-		if(p.equals(q))
+		if(p.compareTo(q)==0)
 		{
 			System.out.println("Lines are equal");
-		
 		}
-		else
+		else if(p.compareTo(q)<0)
 		{
-		System.out.println("Line are not equal");
+			System.out.println("The first line is smaller in length compared to the second line");
+		}
+		else if(p.compareTo(q)>0)
+		{
+			System.out.println("The first line is larger in length compared to the second line");
 		}
 	}
 	
@@ -36,7 +38,7 @@ public class LineComparison {
 		System.out.println("Welcome to Line Comparison Computation Program ");
 		LineComparison lc=new LineComparison();
 		Scanner sc=new Scanner(System.in);
-		lc.equal();
+		lc.compare();
 	}
 	
 
