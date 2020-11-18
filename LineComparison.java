@@ -4,21 +4,21 @@ public class LineComparison {
 	double LineLength()
 	{
 		Scanner sc=new Scanner(System.in);
-		int x1=sc.nextInt(); 
-		int x2=sc.nextInt();
-		int y1=sc.nextInt();
-		int y2=sc.nextInt();
-	    int x=(x2-x1)*(x2-x1);
-	    int y=(y2-y1)*(y2-y1);
+		int x1= sc.nextInt(); 
+		int x2= sc.nextInt();
+		int y1= sc.nextInt();
+		int y2= sc.nextInt();
+	   	int x= (x2-x1) * (x2-x1);
+	    	int y= (y2-y1) * (y2-y1);
 		double length= Math.sqrt(x+y);
 		return length;
 	}
 	
 	void compare()
 	{	System.out.println("Enter the coordinates of first line");
-		String p=String.valueOf(LineLength());
+		String p= String.valueOf(LineLength());
 		System.out.println("Enter the coordinates of second line");
-		String q=String.valueOf(LineLength());
+		String q= String.valueOf(LineLength());
 		if(p.compareTo(q)==0)
 		{
 			System.out.println("Lines are equal");
